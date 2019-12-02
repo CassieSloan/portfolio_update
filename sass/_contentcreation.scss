@@ -1,0 +1,196 @@
+#content_page { 
+    @import url('https://fonts.googleapis.com/css?family=Comfortaa:300&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap');
+    @mixin hover-text-replace ($margin-left, $margin-top, $title, $paragraph)
+    {
+        position: absolute;
+        margin-left: $margin-left;
+        margin-top: $margin-top;
+        transform: scale(1);
+        transition-duration: 1s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+            &:hover {
+                transform: scale(1.25);
+                    }   
+            &:hover ~ div h3 {
+                    font-size: 0px;
+                    }
+            &:hover ~ div p {
+                    font-size: 0px;
+                    }
+            &:hover ~ div h3:after {
+                    content: $title;
+                    font-size: 30px;
+                    }
+            &:hover ~ div p:after {
+                    content: $paragraph;
+                    font-size: 20px;
+                    }
+    }
+
+    body {
+        background-color: rgb(0, 0, 0);
+
+        div .dropbtn {
+            right: 0;
+            }
+            .dropbtn {
+            right: 0;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            }
+            .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-left: 85%;
+            margin-top: 2%;
+            
+            }
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            opacity: 0.80;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+            .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            }
+            .dropdown-content a:hover {
+            background-color: rgb(255, 203, 203);
+            }
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+            .dropdown:hover .dropbtn {
+            background-color: #ffffff;
+            }
+
+        .microphone {
+            @include hover-text-replace (45%, 10%, "Podcast", "My podcast about games");
+        }
+        .coding {
+            @include hover-text-replace (65%, 25%, "Programming", "My work as a developer");
+        }
+        .camera {
+            @include hover-text-replace (60%, 45%, "Collaboration", "My work as a model");        
+        }
+        .headset {
+            @include hover-text-replace (25%, 25%, "Twitch Community", "My work as a streamer");
+        }
+        .art {
+            @include hover-text-replace (30%, 45%, "Art", "Doodles from here and there");
+        }
+    }
+    section {
+        margin-top: -15%;
+    }
+ 
+    .enlarge_text {
+        position: absolute;
+        margin-left: 40%;
+        margin-top: 30%;
+        transform: scale(1);
+        transition-duration: 1s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+            &:hover {
+                transform: scale(1.25);
+            }
+    }
+    h1 {
+        font-family: 'Permanent Marker', cursive;
+        color: white;
+        font-size: 100px;
+        margin-top: -5%;
+        margin-left: 10%;
+    }
+
+    h2 {
+        color: rgb(255, 203, 203);
+        font-family: 'Comfortaa', cursive;
+        font-weight: 700;
+        font-size: 2em;
+    }
+    h3 {
+        color: rgb(255, 203, 203);
+        font-size: 1.5em;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 700;
+    }
+    h6 {
+        color: rgb(255, 203, 203);
+        font-family: 'Comfortaa', cursive;
+        font-size: 1em;
+    }
+    
+    p {
+        color: rgb(255, 203, 203);
+        font-family: 'Comfortaa', cursive;
+    }
+    footer {
+        color: rgb(255, 203, 203);
+        font-family: 'Comfortaa', cursive;
+        text-align: center;
+        margin-top: 10%;
+        }
+        
+    .flexbox {
+        display: flex;
+        justify-content: center;
+        margin: 5% 5%;
+        
+    }
+
+    article {
+        margin-top: 65%;
+    }
+    #anchor_embed {
+        margin-top: 10%;
+        margin-left: 5%;
+        
+    }
+    #git_embed {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    #art_embed {
+        margin-left: 5%;
+    }
+    #twitch_embed {
+        margin-left: 5%;
+    }
+    .resize {
+        width: auto;
+        height: 300px;
+        display: inline;
+        }
+    .model_info {
+        text-align: center;
+        h6 {
+            margin: 2% 5%;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    
+        #content_page .flexbox {
+            flex-direction: column-reverse;
+            align-items: center;
+        }  
+    }
+@media screen and (max-width: 1200px) {
+    #content_page .resize {
+        height: 150px;
+    }        
+}

@@ -1,0 +1,235 @@
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300&display=swap');
+
+#homepage {
+    
+    body {
+        background-color: rgb(0, 0, 0);
+
+        div .dropbtn {
+            right: 0;
+        }
+        
+        .dropbtn {
+            right: 0;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-left: 89%;
+            margin-top: 2%;
+
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            opacity: 0.80;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color:  rgb(255, 203, 203);
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #ffffff;
+        }
+            
+        .nav_images {
+            a {
+                display: inline-block;
+                width: 20%;
+                position: relative;
+            }
+            .nav_image_sub {
+                width: 100%;
+                height: 500px;
+                display: inline-block;
+                background-color: rgba(255, 203, 203, 1);
+                transition: background-size 1s ease 0s;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-position: center; 
+            }
+            .color_overlay {
+                opacity: 0;
+                background-color: rgba(255, 203, 203, 0.3);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                &:hover {
+                    opacity: 1;
+                }
+                &:hover + div {
+                    background-size: auto 150%
+                }
+            }
+            #nav_image1 {
+                background-image: url('/images/me_arcade.jpg');
+            }
+            #nav_image2 {
+                background-image: url('/images/contact.jpeg');
+            }
+            #nav_image3 {
+                background-image: url('/images/blog.jpeg');
+            }
+            #nav_image4 {
+                background-image: url('/images/content.jpeg');
+            }
+        
+
+        }
+        .align_right {
+            text-align: right;
+            z-index: 1;
+        }
+               
+        
+        footer {
+            color: rgb(255, 203, 203);
+            font-family: 'Comfortaa', cursive;
+            text-align: center;
+            margin-top: 10%;
+        }
+        p {
+            position: absolute;
+            color: rgb(255, 203, 203);
+            font-family: 'Comfortaa', cursive;
+            width: 50%;
+            margin-left: 15%;
+            margin-top: -10%;
+            text-align: left;
+            line-height: 130%;
+            letter-spacing: 0.1em;
+        }
+        h1 {
+            position: absolute;
+            font-family: 'Permanent Marker', cursive;
+            color: rgb(255, 255, 255);
+            font-size: 6.5em;
+            margin-left: 25%;
+            margin-top: 4%;
+            margin-bottom: 10%;
+        }
+        h3 {
+            font-size: 3em;
+            color: rgb(255, 255, 255);
+            transform: rotate(270deg);
+            margin-top: 150%;
+            text-shadow: 2px 2px 2px #000000;
+            margin-left: -27%;
+            width: 100%;
+        }
+        // classes
+        
+        .imageresize {
+            width: 20%;
+            height: auto;
+            
+        }
+        
+        .bottom_portrait {
+            height: auto;
+            width: 25%;
+            margin-right: 5%;
+            margin-top: 5%;
+            border-radius: 20px 90px 90px 90px;
+            text-align: right;
+        }
+        // .align_right {
+        //     text-align: right;
+        // }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .logo {
+            text-align: center;
+            margin: 30px;
+        }
+        
+        // IDs
+        
+        #section1 {
+            position: relative;
+            margin-left: 50px;
+            padding: 50px;
+            border-left: 10px solid rgb(255, 255, 255);
+            border-top: 10px solid rgb(255, 255, 255);
+        
+                .bar {
+                width: 75%;
+                height: 15px;
+                background-color: rgb(0, 0, 0);
+                position: absolute;
+                top: -10px;
+                right: 0;
+                }
+                .left_bar {
+                width: 15px;
+                height: 45%;
+                background-color: rgb(0, 0, 0);
+                position: absolute;
+                left: -10px;
+                bottom: 0;
+                }
+        #section2 {
+            text-align: right;
+                }
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    
+    #homepage body h1 {
+        position: static;
+        margin: auto;
+        text-align: center;
+    }  
+    #homepage body .align_center {
+        position: relative;
+        text-align: center;
+        margin-top: 0px;
+        width: 100%;
+    }
+    #homepage body p {
+        position: static;
+        margin: auto;
+        margin-top: 5%;
+        text-align: center;
+        width: 50%;
+    }
+    #homepage body .align_right {
+        text-align: center;
+    }    
+}

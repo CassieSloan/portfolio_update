@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap');
+
+
+#blog {
+
+    body { 
+        background-color: rgb(0, 0, 0);
+
+        div .dropbtn {
+            right: 0;
+            }
+            .dropbtn {
+            right: 0;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            }
+            .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-left: 85%;
+            margin-top: 2%;
+            
+            }
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            opacity: 0.80;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+            .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            }
+            .dropdown-content a:hover {
+            background-color: rgb(255, 203, 203);
+            }
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+            .dropdown:hover .dropbtn {
+            background-color: #ffffff;
+            }
+            
+        section {
+            // text-align: center;
+            margin-top: 20%;
+        }
+        h1 {
+            position: absolute;
+            font-family: 'Permanent Marker', cursive;
+            color: rgb(255, 255, 255);
+            font-size: 100px;
+            margin-left: 40%;
+            margin-top: 1%;
+        }
+   
+        .flexbox {
+            display: flex;
+            margin: 4%;
+
+            div:nth-of-type(2) {
+                flex: 1;
+            }
+        }
+        h3 {
+            color: rgb(255, 203, 203);
+            font-size: 30px;
+            font-family: 'Comfortaa', cursive;
+            font-weight: 700;
+            margin-left: 5%;        
+        }
+
+        p {
+            color: rgb(255, 203, 203);
+            font-family: 'Comfortaa', cursive;                        
+            line-height: 130%;
+            letter-spacing: 0.1em;
+            margin-left: 5%;
+            span {
+                color: black;
+                font-weight: 700;
+                font-size: 0.75em;
+                background-color: rgb(255, 203, 203);
+                padding: 1%;
+                border-radius: 1em;
+            }        
+        }
+
+        .blog_images {
+            
+            width: 400px;
+            height: 300px;
+            border-radius: 2em;
+                }
+                #blog1 {
+                    background: url(/images/blog1.jpg) no-repeat center;
+                    background-size: cover;
+                    }
+                #blog2 {
+                    background: url(/images/blog2.jpg) no-repeat center;
+                    background-size: cover;
+                }
+                #blog3 {
+                    background: url(/images/blog3.jpg) no-repeat center;
+                    background-size: cover;
+                }
+                #blog4 {
+                    background: url(/images/blbog4.gif) no-repeat center;
+                    background-size: cover;
+                }
+                #blog5 {
+                    background: url(/images/blog5.jpg) no-repeat center;
+                    background-size: cover;
+
+                }
+                footer {
+                    color: rgb(255, 203, 203);
+                    font-family: 'Comfortaa', cursive;
+                    text-align: center;
+                    margin-top: 10%;
+                    }
+    }
+
+
+@media screen and (max-width: 900px) {
+    
+    body {
+        .flexbox {
+            display: block;
+        }  
+        .blog_images {
+            margin: auto;
+        }
+    }
+}
+ 
+}
